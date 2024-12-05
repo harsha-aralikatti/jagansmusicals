@@ -12,6 +12,136 @@
 --------------------------------------------------------------*/
 /* Fonts */
 
+/* Carousel Container */
+/* Carousel Container */
+/* Carousel Container */
+.events .event-banner {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel Images */
+.events .event-banner img {
+  object-fit: cover;
+  width: 100%;
+  height: 50vh; /* Default height */
+}
+
+@media (min-width: 769px) {
+  .events .event-banner img {
+    height: 35vh; /* Smaller height on laptops */
+  }
+}
+
+/* Event Content (Text Overlay) */
+.events .event-content {
+  position: absolute;
+  color: #333; /* Dark text for better readability */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .events .event-content {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.9), transparent);
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .events .event-content {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Headings and Text */
+.events .event-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.events .event-content p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+/* Custom Carousel Indicators */
+.custom-indicators {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.custom-indicators button {
+  width: 12px;
+  height: 12px;
+  background-color: blue;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-indicators button.active {
+  opacity: 1;
+  background-color: darkblue;
+}
+
+.custom-indicators button:hover {
+  opacity: 1;
+}
+
+
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe57;
+  color: white;
+}
+
+.btn-contact {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.btn-contact:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+
 .mapouter{
   margin-top:-20px ;
   margin-bottom: 20px;
