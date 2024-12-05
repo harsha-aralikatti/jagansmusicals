@@ -148,6 +148,18 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+.img-fluid{
+  border-radius: 20px;
+  box-shadow: black;
+}
+.img-fluid small-image rounded-4{
+  margin: none;
+}
+
+
+
+
+
 .header {
   --background-color: rgba(255, 255, 255, 0);
   color: var(--default-color);
