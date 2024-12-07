@@ -15,6 +15,31 @@
 /* Carousel Container */
 /* Carousel Container */
 /* Carousel Container */
+/* Default size for larger screens */
+.sitename {
+  font-size: 2.5rem;  /* Adjust to desired size for larger screens */
+}
+
+/* Adjust font size for small and extra-small devices */
+@media (max-width: 991px) {  /* Medium screens and below */
+  .sitename {
+    font-size: 2rem;  /* Smaller font size */
+  }
+}
+
+@media (max-width: 767px) {  /* Small screens and below */
+  .sitename {
+    font-size: 1.5rem;  /* Even smaller font size */
+  }
+}
+
+@media (max-width: 575px) {  /* Extra-small screens */
+  .sitename {
+    font-size: 1.2rem;  /* Smallest font size */
+  }
+}
+
+
 .events .event-banner {
   position: relative;
   border-radius: 15px;
