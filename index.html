@@ -68,17 +68,23 @@
             <!-- Event 1 -->
             <div class="carousel-item active">
               <div class="event-banner">
-                <img src="https://via.placeholder.com/800x400?text=Event+1" class="d-block w-100"  alt="Event 1">
+                <picture>
+                  <!-- Mobile view image -->
+                  <source srcset="assets/img/400x300.png" media="(max-width: 768px)">
+                  <!-- Laptop view image -->
+                  <source srcset="assets/img/800x400.png" media="(min-width: 769px)">
+                  <img src="https://via.placeholder.com/800x400?text=Event+1" class="d-block w-100" alt="Event 1">
+                </picture>
                 <div class="event-content">
-                  <h3>Event 1: Music Fest</h3>
-                  <p>Date: 20th Dec 2024</p>
-                  <p>Time: 6:00 PM</p>
+                  <h3>Annual Celebration</h3>
+                  <p>Date: 22nd Dec 2024</p>
+                  <p>Time: 05:30 PM</p>
                   <p>Join us for an evening of rhythm and melodies!</p>
                 </div>
               </div>
             </div>
             <!-- Event 2 -->
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
               <div class="event-banner">
                 <img src="https://via.placeholder.com/800x400?text=Event+2" class="d-block w-100" alt="Event 2">
                 <div class="event-content">
@@ -88,9 +94,9 @@
                   <p>Experience the magic of dance performances!</p>
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- Event 3 -->
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
               <div class="event-banner">
                 <img src="https://via.placeholder.com/800x400?text=Event+3" class="d-block w-100" alt="Event 3">
                 <div class="event-content">
@@ -100,7 +106,7 @@
                   <p>Feel the harmony of instrumental symphonies!</p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
     
           <!-- Carousel Indicators -->
